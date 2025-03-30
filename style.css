@@ -1,6 +1,6 @@
 /* General Styles */
 body {
-  font-family: Arial, sans-serif;
+  font-family: 'Aptos', Arial, sans-serif; /* Changed font to Aptos with fallback */
   line-height: 1.6;
   margin: 0;
   padding: 0;
