@@ -1,1 +1,105 @@
-/* Add you CSS here */
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+}
+
+/* Hero Section */
+.hero {
+  background-image: url('img/hero-bg.jpg'); /* Corrected path to the image */
+  background-size: cover; /* Make the image cover the entire section */
+  background-position: center; /* Center the image */
+  text-align: center;
+  padding: 20px;
+  position: relative; /* Position for overlay */
+  color: lightcyan; /* Ensure text is readable */
+}
+
+.hero::before {
+  content: ""; /* Add an overlay */
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black overlay */
+  z-index: 1; /* Place the overlay below the text */
+}
+
+.hero h1, .hero p {
+  position: relative; /* Ensure text is above the overlay */
+  z-index: 2;
+}
+
+.hero h1 {
+  font-size: 2em;
+  margin: 0;
+}
+
+.hero p {
+  font-size: 1.2em;
+  color: lightblue; /* Changed text color to light blue */
+}
+
+/* Bio Section */
+.bio {
+  padding: 20px;
+  background-color: rgb(70, 132, 132); /* Teal background */
+  text-align: center; /* Center the section */
+}
+
+.bio-content {
+  display: flex; /* Use flexbox for two columns */
+  align-items: center; /* Center items vertically */
+  justify-content: center; /* Center items horizontally */
+  gap: 20px; /* Add space between the image and text */
+  flex-wrap: wrap; /* Ensure responsiveness on smaller screens */
+  text-align: left; /* Align text to the left in the right column */
+}
+
+.bio-content div {
+  max-width: 400px; /* Limit the width of the text and heading */
+}
+
+.bio-image {
+  width: 200px; /* Increased the width of the image */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 15px; /* Increased the corner rounding */
+}
+
+.bio h2 {
+  font-size: 1.5em;
+  color: lightblue;
+  text-align: center; /* Center the heading */
+  margin-bottom: 5px; /* Reduced spacing below the heading */
+}
+
+.bio p {
+  font-size: 1em;
+  color: #666;
+  max-width: 400px; /* Limit the width of the text */
+}
+
+/* Skills Section */
+.skills {
+  padding: 20px;
+  background-color: #f9f9f9;
+  text-align: center; /* Center the text */
+}
+
+.skills h2 {
+  font-size: 1.5em;
+  color: #333;
+}
+
+.skills ul {
+  list-style-type: none; /* Remove bullet points */
+  padding-left: 0; /* Remove default padding */
+}
+
+.skills li {
+  font-size: 1em;
+  color: #555;
+}
