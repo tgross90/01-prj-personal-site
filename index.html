@@ -6,16 +6,28 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <!-- Navigation Bar -->
+  <nav class="navbar">
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
   <!-- Hero Section -->
-  <section class="hero">
+  <section id="home" class="hero">
+    <img src="img/IMG_0921.jpeg" alt="Hero Image" class="hero-image">
     <h1>Taylor Gross</h1>
     <p>Data-loving web developer!</p>
   </section>
 
   <!-- Bio Section -->
-  <section class="bio">
+  <section id="about" class="bio">
     <div class="bio-content">
-      <img src="img/laptop.jpg" alt="Laptop" class="bio-image">
+      <img src="img/laptop-5673901_1280.jpg" alt="Laptop" class="bio-image">
       <div>
         <h2>About Me</h2>
         <p>Hello! I'm a passionate learner exploring the world of web development. I enjoy creating simple and functional websites.</p>
@@ -24,13 +36,24 @@
   </section>
 
   <!-- Skills Section -->
-  <section class="skills">
+  <section id="skills" class="skills">
     <h2>My Skills</h2>
     <ul>
-      <li>HTML</li>
-      <li>CSS</li>
-      <li>JavaScript</li>
+      <li>
+        <img src="img/html.svg" alt="HTML Logo" class="skill-icon"> HTML
+      </li>
+      <li>
+        <img src="img/js2.svg" alt="JavaScript Logo" class="skill-icon"> JavaScript
+      </li>
+      <li>
+        <img src="img/css.svg" alt="CSS Logo" class="skill-icon"> CSS
+      </li>
     </ul>
   </section>
+
+  <!-- Footer Section -->
+  <footer class="footer">
+    <p>&copy; 2025 Taylor Gross. All rights reserved.</p>
+  </footer>
 </body>
 </html>
